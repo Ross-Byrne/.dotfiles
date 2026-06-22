@@ -8,6 +8,7 @@
 // from the command palette or from `Zed` application menu.
 {
   "outline_panel": {
+    "button": false,
     "dock": "left"
   },
   "collaboration_panel": {
@@ -29,6 +30,7 @@
   },
   "agent_buffer_font_size": 17.0,
   "agent": {
+    "sidebar_side": "right",
     "dock": "right",
     "tool_permissions": {
       "default": "allow"
@@ -43,6 +45,7 @@
   "vim": {
     "toggle_relative_line_numbers": true
   },
+  "format_on_save": "on",
   "cursor_blink": false,
   "project_panel": {
     "dock": "left",
@@ -58,6 +61,11 @@
   "buffer_font_size": 17.0,
   "formatter": "language_server",
   "lsp": {
+    "ruby-lsp": {
+      "settings": {
+        "use_bundler": false
+      }
+    },
     "rubocop": {
       "settings": {
         "use_bundler": true

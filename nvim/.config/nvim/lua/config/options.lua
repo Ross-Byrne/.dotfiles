@@ -21,3 +21,14 @@ vim.g.rustaceanvim = {
 
 -- Ruby dev
 vim.g.lazyvim_ruby_lsp = "ruby_lsp"
+
+-- Treat Thor task files as Ruby (registered before startup so the first
+-- file opened from the CLI is detected correctly)
+vim.filetype.add({
+  extension = {
+    thor = "ruby",
+  },
+  filename = {
+    Thorfile = "ruby",
+  },
+})

@@ -24,6 +24,14 @@
     "provider": "none"
   },
   "agent_servers": {
+    "claude-acp": {
+      "default_config_options": {
+        "mode": "plan",
+        "effort": "high",
+        "model": "opus"
+      },
+      "type": "registry"
+    },
     "github-copilot": {
       "type": "registry"
     }
